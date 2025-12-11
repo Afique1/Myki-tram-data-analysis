@@ -2,8 +2,21 @@ to overcome restriction of large file (>100MB):
 
 [optional] git clone https://link
 
+
 > have the file in the pwd
+git lfs track "*.csv"
 
 git add .gitattributes 
 git add dataset.csv 
+
+git commit -m "message"
+//or,
 git commit -m "Add large dataset via Git LFS"
+
+>check status:
+git status
+
+git push origin main
+
+>Verify large files:
+ git lfs ls-files
